@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Проєкт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>SVG Проєкт: Квадрат, Прямокутник, Коло, Еліпс</h1>
+
+  <svg width="500" height="300">
+    <!-- Квадрат -->
+    <rect id="square" x="10" y="10" width="80" height="80"
+          stroke="red" fill="yellow" stroke-width="5"/>
+    
+    <!-- Прямокутник -->
+    <rect id="rectangle" x="110" y="10" width="120" height="80"
+          stroke="blue" fill="green" stroke-width="5"/>
+    
+    <!-- Коло з анімацією -->
+    <circle cx="100" cy="200" r="50"
+            stroke="purple" fill="pink" stroke-width="5"
+            class="animated"/>
+    
+    <!-- Еліпс -->
+    <ellipse cx="300" cy="200" rx="60" ry="40"
+             stroke="orange" fill="lightblue" stroke-width="5"/>
+  </svg>
+
+</body>
+</html>

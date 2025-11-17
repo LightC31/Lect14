@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Загальні стилі для SVG */
+svg {
+  background-color: #f0f0f0;
+  margin: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Коло — постійна анімація зміни кольору */
+.animated {
+  animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% { fill: red; stroke: blue; }
+  50% { fill: yellow; stroke: green; }
+  100% { fill: pink; stroke: purple; }
+}
+
+/* Квадрат — анімація при наведенні миші */
+rect#square:hover {
+  fill: orange;
+  stroke: darkred;
+  transition: fill 0.5s ease, stroke 0.5s ease;
+}
+
+/* Прямокутник — анімація при наведенні миші */
+rect#rectangle:hover {
+  fill: lightgreen;
+  stroke: darkgreen;
+  transition: fill 0.5s ease, stroke 0.5s ease;
+}
+
+/* Еліпс — пульсація та зміна кольору */
+ellipse {
+  transform-origin: center;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); fill: lightblue; stroke: orange; }
+  50% { transform: scale(1.2); fill: lightpink; stroke: red; }
+  100% { transform: scale(1); fill: lightblue; stroke: orange; }
+}
